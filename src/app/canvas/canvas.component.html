@@ -1,0 +1,11 @@
+<div>
+  <canvas #canva width="800" height="600"
+      (mousedown)="onCanvasMouseDown($event)"
+      (mousemove)="onCanvasMouseMove($event)"
+      (mouseup)="onCanvasMouseUp($event)"
+      (mouseleave)="onCanvasMouseLeave($event)">
+  </canvas>
+</div>
+<div>
+  <input type="file" (change)="onFileSelected($event)">
+</div>
